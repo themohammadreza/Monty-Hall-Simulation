@@ -27,4 +27,10 @@ def game_simulation(num_of_reapet: int, switch: bool) -> float:
 
 
 if __name__ == "__main__":
-    pass
+    print("Monty Hall Game Simulation")
+    num_of_repeats = 100000
+    switch_wins = game_simulation(num_of_repeats, switch=True)
+    stay_wins = game_simulation(num_of_repeats, switch=False)
+
+    print(f"Switching: {switch_wins:.2f}")
+    print(f"Staying: {stay_wins:.2f}")
