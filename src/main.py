@@ -34,3 +34,5 @@ if __name__ == "__main__":
 
     print(f"Switching: {switch_wins:.2f}")
     print(f"Staying: {stay_wins:.2f}")
+
+    assert switch_wins > stay_wins, "Switching should yield a higher win rate than staying."
